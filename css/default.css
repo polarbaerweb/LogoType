@@ -1,0 +1,64 @@
+.button {
+	background-color: #43a047;
+	width: 10.6875rem;
+	min-height: 3.125rem;
+	border-radius: 0.5rem;
+	color: #ffffffff;
+	font-weight: 700;
+	text-transform: capitalize;
+	font-size: 1rem;
+	cursor: pointer;
+	display: inline-block;
+	transition: all 0.4s;
+}
+
+.button:not(.main__block-button--white):hover {
+	background-color: #48ab4c;
+}
+
+.main__section {
+	padding: 2.8125rem 0 8.1875rem 0;
+}
+
+.main__section-header {
+	text-align: center;
+	max-width: 50rem;
+	margin: 0 auto 4.75rem auto;
+}
+.main__section-title {
+	color: #000;
+	font-size: 3rem;
+	line-height: 110%;
+	font-weight: 600;
+	text-transform: capitalize;
+}
+.main__section-text {
+}
+.main__section-paragraph {
+	font-size: 1.5rem;
+	color: #616161;
+	font-weight: 500;
+	line-height: 150%;
+}
+
+@media (max-width: 992px) {
+	.main__section {
+		padding: 1.5625rem 0 6.9375rem 0;
+	}
+
+	.main__section-header {
+		margin: 0 auto 3.5rem auto;
+	}
+
+	.main__section-title {
+		font-size: 2rem;
+	}
+
+	.main__section-paragraph {
+		font-size: 1.125rem;
+	}
+
+	.button {
+		width: 7.5rem;
+	}
+}
