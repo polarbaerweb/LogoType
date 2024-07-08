@@ -18,13 +18,21 @@
 
 .main__section {
 	padding: 2.8125rem 0 8.1875rem 0;
+	position: relative;
+}
+
+.main__container > * {
+	position: relative;
+	z-index: 99;
 }
 
 .main__section-header {
 	text-align: center;
 	max-width: 50rem;
 	margin: 0 auto 4.75rem auto;
+	position: relative;
 }
+
 .main__section-title {
 	color: #000;
 	font-size: 3rem;
