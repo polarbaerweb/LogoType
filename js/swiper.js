@@ -1,8 +1,6 @@
 const swiper_service = new Swiper(".swiper", {
 	direction: "horizontal",
 	loop: true,
-	slidesPerView: 2,
-	spaceBetween: 32,
 
 	pagination: {
 		el: ".swiper-pagination",
@@ -35,7 +33,7 @@ const swiper_service = new Swiper(".swiper", {
 const swiper_about = new Swiper(".main__about-swiper", {
 	direction: "horizontal",
 	loop: true,
-	slidesPerView: 2,
+	slidesPerView: 3,
 	spaceBetween: 32,
 
 	pagination: {
