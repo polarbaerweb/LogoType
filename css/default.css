@@ -12,8 +12,20 @@
 	transition: all 0.4s;
 }
 
-.button:not(.main__block-button--white):hover {
-	background-color: #48ab4c;
+@media (hover: hover) {
+	.button:not(._disable-button-hover):hover {
+		background-color: #48ab4c;
+	}
+}
+
+.button--outlined {
+	background-color: transparent;
+	color: #43a047;
+	border: 0.125rem solid #43a047;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-transform: uppercase;
 }
 
 .main__section {
