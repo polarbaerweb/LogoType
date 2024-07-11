@@ -77,9 +77,9 @@ body.active {
 	padding: 0 0.625rem;
 }
 
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
 	display: none;
-}
+} */
 
 ._ibg {
 	position: relative;

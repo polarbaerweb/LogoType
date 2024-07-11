@@ -903,3 +903,71 @@
 		font-size: 1.125rem;
 	}
 }
+
+/* Main Map */
+
+.main__map {
+	width: 100%;
+	position: relative;
+}
+
+.main__map-contacts {
+	position: absolute;
+	top: 50%;
+	left: 10%;
+	transform: translate(0, -50%);
+	max-width: 34.375rem;
+	width: 100%;
+	background-color: #181818;
+	padding: 1.5625rem;
+}
+.main__map-contact-header {
+	margin-bottom: 0.9375rem;
+}
+
+.main__map-title {
+	color: #ffffffff;
+	font-size: 1.5rem;
+	font-weight: 800;
+	line-height: 150%;
+	text-transform: capitalize;
+	letter-spacing: 0.0125rem;
+}
+
+.main__contacts-conacts {
+}
+
+.main__conacts-link:not(:last-child) {
+}
+
+.main__conacts-link {
+	display: block;
+	color: #ffffffff;
+	font-size: 1rem;
+	font-weight: 500;
+	line-height: 150%;
+}
+
+.main__contacts-text {
+	margin-top: 0.9375rem;
+	color: #ffffffff;
+}
+
+.main__map-frame {
+	width: 100%;
+	height: 30.9375rem;
+}
+
+@media (max-width: 592px) {
+	.main__map-contacts {
+		position: relative;
+		top: 0;
+		left: 0;
+		transform: translate(0, 0);
+		border-bottom: 0.0625rem solid #ffffffff;
+	}
+
+	.main__map-frame {
+		height: 18.4375rem;
+	}
+}
