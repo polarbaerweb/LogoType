@@ -46,7 +46,7 @@
 	line-height: 150%;
 	opacity: 0;
 	transform: translate(0, 120%);
-	transition: all 0.4s;
+	transition: all 0.6s;
 }
 
 .main__block-paragraph.animate-active {
@@ -60,7 +60,7 @@
 
 	opacity: 0;
 	transform: translate(0, 120%);
-	transition: all 0.4s;
+	transition: all 0.8s;
 }
 
 .main__block-buttons.animate-active {
@@ -358,13 +358,11 @@
 }
 
 .main__swiper-item {
-	width: 33.333%;
 }
 
-.main__swiper-item a {
-	display: block;
+.main__swiper-item {
 	width: 100%;
-	height: 20.25rem;
+	min-height: 20.25rem;
 	position: relative;
 }
 
@@ -376,6 +374,7 @@
 	left: 0;
 	object-fit: cover;
 	border-radius: 1rem;
+	cursor: pointer;
 }
 
 .swiper-pagination {
@@ -809,4 +808,98 @@
 	font-size: 1.125rem;
 	text-transform: uppercase;
 	width: 100%;
+}
+
+@media (max-width: 768px) {
+	.main__projects {
+		padding: 0.9375rem 0 2.8125rem 0;
+	}
+}
+
+/* Main News */
+
+.main__news {
+}
+
+.main__news-swiper {
+}
+
+.main__news-swiper-wrapper {
+}
+
+.main__news-slide {
+	position: relative;
+}
+
+.main__news-image-wrapper {
+	position: relative;
+	width: 100%;
+	height: 23.0625rem;
+	margin-bottom: 0.75rem;
+}
+
+.main__news-prev,
+.main__news-next {
+	--swiper-navigation-top-offset: 42%;
+}
+
+.main__news-image {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 1rem;
+	filter: brightness(0.7);
+}
+
+.main__news-title {
+	color: #000000;
+	font-size: 1.5rem;
+	font-weight: 600;
+	line-height: 110%;
+}
+
+.main__news-button-box {
+	position: absolute;
+	top: 47%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 3.75rem;
+	height: 3.75rem;
+	border-radius: 50%;
+	background-color: #efefed;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.main__news-button {
+	width: 0;
+	height: 0;
+	border-top: 1.25rem solid transparent;
+	border-bottom: 1.25rem solid transparent;
+
+	margin-left: 0.625rem;
+	border-left: 1.875rem solid green;
+}
+
+@media (max-width: 768px) {
+	.main__news {
+		padding: 0.9375rem 0 2.8125rem 0;
+	}
+
+	.main__news-image-wrapper {
+		height: 16.8125rem;
+	}
+
+	.main__news-prev,
+	.main__news-next {
+		--swiper-navigation-top-offset: 37%;
+	}
+
+	.main__news-title {
+		font-size: 1.125rem;
+	}
 }

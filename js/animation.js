@@ -16,14 +16,17 @@ class AnimationText {
 				function () {
 					this._animationHandler(block);
 				}.bind(this),
+
 				index * (this._animation_start_time / 2),
 			);
+
 			this._timeouts.push(timeoutId);
 		});
 	}
 
-	_animationHandler(block) {
+	_animationHandler(block, delay) {
 		block.classList.add("animate-active");
+
 		this._animationsCompleted++;
 
 		const blocks_length = document.querySelectorAll(

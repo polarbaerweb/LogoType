@@ -90,3 +90,32 @@ const swiper_projects = new Swiper(".main__projects-swiper", {
 		prevEl: ".swiper-button-prev",
 	},
 });
+
+// main__news-swiper
+
+const swiper_news = new Swiper(".main__news-swiper", {
+	direction: "horizontal",
+	loop: true,
+
+	breakpoints: {
+		320: {
+			slidesPerView: 1,
+			spaceBetween: 0,
+		},
+
+		592: {
+			slidesPerView: 2,
+			spaceBetween: 10,
+		},
+
+		1024: {
+			slidesPerView: 2,
+			spaceBetween: 32,
+		},
+	},
+
+	navigation: {
+		nextEl: ".swiper-button-next",
+		prevEl: ".swiper-button-prev",
+	},
+});
