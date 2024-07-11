@@ -1,11 +1,9 @@
 document.addEventListener("DOMContentLoaded", htmlLoaded);
 
 function htmlLoaded() {
-	const images_popup = document.querySelectorAll("._image-popup");
-
 	document.body.addEventListener("click", function (event) {
 		const image = event.target.closest("._image-popup img");
-		if (image) {
+		if (image && window.innerWidth >= 768) {
 			const parent = image.closest("._image-popup");
 			handleImageClick(image, parent);
 		}
