@@ -912,15 +912,17 @@
 }
 
 .main__map-contacts {
-	position: absolute;
-	top: 50%;
-	left: 10%;
-	transform: translate(0, -50%);
-	max-width: 34.375rem;
+	max-width: 100%;
 	width: 100%;
 	background-color: #181818;
 	padding: 1.5625rem;
+	border-bottom: 0.0625rem solid #ffffffff;
+	display: flex;
+	justify-content: flex-start;
+	gap: 1.5625rem;
+	flex-wrap: wrap;
 }
+
 .main__map-contact-header {
 	margin-bottom: 0.9375rem;
 }
@@ -958,15 +960,7 @@
 	height: 30.9375rem;
 }
 
-@media (max-width: 592px) {
-	.main__map-contacts {
-		position: relative;
-		top: 0;
-		left: 0;
-		transform: translate(0, 0);
-		border-bottom: 0.0625rem solid #ffffffff;
-	}
-
+@media (max-width: 768px) {
 	.main__map-frame {
 		height: 18.4375rem;
 	}
