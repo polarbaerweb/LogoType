@@ -27,6 +27,14 @@
 	font-size: 4rem;
 	font-weight: 700;
 	line-height: -2%;
+	opacity: 0;
+	transform: translate(0, 120%);
+	transition: all 0.4s;
+}
+
+.main__block-title.animate-active {
+	opacity: 1;
+	transform: translate(0, 0);
 }
 
 .main__block-text {
@@ -36,11 +44,28 @@
 	font-size: 1.5rem;
 	color: #ffffffff;
 	line-height: 150%;
+	opacity: 0;
+	transform: translate(0, 120%);
+	transition: all 0.4s;
+}
+
+.main__block-paragraph.animate-active {
+	opacity: 1;
+	transform: translate(0, 0);
 }
 
 .main__block-buttons {
 	display: flex;
 	gap: 0.4375rem;
+
+	opacity: 0;
+	transform: translate(0, 120%);
+	transition: all 0.4s;
+}
+
+.main__block-buttons.animate-active {
+	opacity: 1;
+	transform: translate(0, 0);
 }
 
 .main__block-button {
@@ -378,7 +403,7 @@
 
 	width: 3.4375rem !important;
 	height: 3.4375rem !important;
-	background-color: rgba(255, 255, 255, 0.7);
+	background-color: rgba(255, 255, 255, 0.75);
 
 	border-radius: 50%;
 }
@@ -386,7 +411,7 @@
 /* Main Call */
 
 .main__call-cover {
-	filter: brightness(0.6);
+	filter: brightness(0.5);
 }
 
 .main__call-form {
@@ -638,12 +663,150 @@
 	}
 }
 
-@media (max-width: 320px) {
-	.main__result-list > *:not(:last-child) {
+@media (max-width: 26.5625rem) {
+	.main__results-item:not(:last-child) {
+		margin-bottom: 3.25rem;
+	}
+}
+
+/* Main Service Price */
+
+.main__service-price-image {
+	filter: brightness(0.5);
+}
+
+.main__services-price {
+}
+
+.main__services-price-list {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.main__services-price-item {
+	max-width: 45.625rem;
+	width: 100%;
+	border-bottom: 0.125rem solid #ffffffff;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 1.5625rem 0 1.5625rem 0.625rem;
+}
+
+.main__services-price-paragraph,
+.main__services-price-title {
+	color: #cdcdcd;
+	font-size: 1.125rem;
+	font-weight: 500;
+	line-height: 150%;
+}
+
+.main__services-price-text {
+}
+
+@media (max-width: 404px) {
+	.main__section-price-header {
 		margin-bottom: 1.25rem;
 	}
 
-	.main__results-item {
-		/* flex-direction: row; */
+	.main__services-price-paragraph,
+	.main__services-price-title {
+		font-size: 0.75rem;
 	}
+}
+
+/* Main Projects */
+
+.main__projects {
+}
+
+.main__projects-swiper {
+}
+
+.main__projects-swiper-wrapper {
+}
+
+.main__projects-swiper-wrapper .main__projects-slide {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 0.9375rem;
+	padding: 0.4375rem;
+	border: 0.125rem solid #43a047;
+	border-radius: 0.75rem;
+	min-height: 28.4375rem;
+}
+
+.main__projects-image-wrapper {
+	position: relative;
+	width: 100%;
+	height: 15.9375rem;
+	overflow: hidden;
+}
+
+.main__projects-image {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transition: all 0.4s;
+}
+
+@media (hover: hover) {
+	.main__projects-image:hover {
+		transform: scale(1.01);
+	}
+}
+
+.main__projects-title {
+	color: #3f3f3f;
+	font-size: 1.375rem;
+	line-height: 150%;
+	text-transform: capitalize;
+}
+
+.main__projects-title::before {
+	content: "<<";
+}
+
+.main__projects-title::after {
+	content: ">>";
+}
+
+.main__projects-title::before,
+.main__projects-title::after {
+	display: inline-block;
+	font-size: 1.375rem;
+	color: #3f3f3f;
+}
+
+.main__projects-text {
+}
+
+.main__projects-paragraph {
+	color: #9e9e9e;
+	font-size: 0.875rem;
+	line-height: 150%;
+	font-weight: 500;
+}
+
+.main__projects-price {
+	color: #43a047;
+	font-size: 1.125rem;
+	font-weight: 600;
+}
+
+.main__projects-paragraph,
+.main__projects-price {
+}
+
+.main__projects-button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 1.125rem;
+	text-transform: uppercase;
+	width: 100%;
 }
