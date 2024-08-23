@@ -6,9 +6,13 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+		<link rel="stylesheet" href="nice-select2/dist/css/nice-select2.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" />
 
 		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 		<script src="https://kit.fontawesome.com/e6a3da6583.js" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+
 		<title>LogoType</title>
 	</head>
 
@@ -17,7 +21,7 @@
 			<header class="header">
 				<div class="header__big_container">
 					<div class="header__left">
-						<a href="#" class="header__link">
+						<a href="#" class="header__link link-disabled">
 							<img src="images/LOGOTYPE.svg" alt="logo image">
 						</a>
 					</div>
@@ -28,16 +32,12 @@
 							<li class="header__list-item"><a href="#" class="header__link">projects</a></li>
 							<li class="header__list-item"><a href="#" class="header__link">news</a></li>
 							<li class="header__list-item"><a href="#" class="header__link">contracts</a></li>
-							<li class="header__list-item header__list-item--flexed">
-								<a href="#" class="header__link">
-									round the clock
-								</a>
-								<a href="tel:+74951234567" class="header__link header__link-phone">
-									+7 495 123-45-67
-								</a>
-							</li>
-							<li class="header__list-item">
-								<button class="header__button button" type="button">send request</button>
+							<li class="header__list-item header__list-item--long">
+								<form action="#" method="post">
+									<select href="#" class="select-country">
+										<option value="">languages</option>
+									</select>
+								</form>
 							</li>
 						</ul>
 					</nav>
@@ -72,7 +72,21 @@
 				<section class="main__section main__services">
 					<div class="main__container">
 						<div class="main__section-header">
-							<h2 class="main__section-title">services</h2>
+							<h2 class="main__section-title">suggestions</h2>
+
+							<form class="main__services-selects" method="post">
+								<div class="main__service-select-first-block">
+									<select class="select select-one">
+									</select>
+									<select class="select select-one">
+									</select>
+								</div>
+								<div class="main__service-select-second-block">
+									<select class="select select-one">
+									</select>
+									<button type="submit" class="button">view <span>suggestions</span></button>
+								</div>
+							</form>
 						</div>
 						<ul class="main__services-list">
 							<li class="main__services-item">
@@ -120,8 +134,7 @@
 							<h2 class="main__section-title main__section-title--white">advantages</h2>
 							<div class="main__section-text">
 								<p class="main__section-paragraph main__section-paragraph--white">Our company is always ready to help
-									you
-									realize even the wildest dreams of your own home.
+									you realize even the wildest dreams of your own home.
 								</p>
 							</div>
 						</div>
@@ -131,7 +144,8 @@
 								<h3 class="main__advantages-title">Turnkey construction</h3>
 								<div class="main__advantages-text">
 									<p class="main__advantages-paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-										Officiis illo pariatur quisquam.</p>
+										Officiis illo pariatur quisquam.
+									</p>
 								</div>
 							</li>
 							<li class="main__services-item main__advantages-item">
@@ -236,6 +250,17 @@
 								<div class="main__reviews-kind">customer</div>
 							</li>
 						</ul>
+						<form action="#" class="main__reviews-form" method="post">
+							<div class="main__reviews-form-box">
+								<label for="name" class="main__reviews-form-label">your name</label>
+								<input type="text" name="name" id="name">
+							</div>
+							<div class="main__reviews-form-box">
+								<label for="review" class="main__reviews-form-label">your review</label>
+								<textarea name="review" id="review"></textarea>
+							</div>
+							<button type="submit" class="button main__reviews-button">send review</button>
+						</form>
 					</div>
 				</section>
 				<section class="main__section main__last-projects">
@@ -371,6 +396,117 @@
 								</div>
 							</div>
 						</div>
+					</div>
+				</section>
+				<section class="main__section main__faq">
+					<div class="main__container">
+						<div class="main__section-header">
+							<h2 class="main__section-title main__section-title--uppercase">
+								faq
+							</h2>
+						</div>
+						<ul class="main__faq-list">
+							<li class="main__faq-item">
+								<div class="main__faq-item-box">
+									<h3 class="main__faq-title">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque, qui
+										magni.
+										Fugiat iusto et facilis hic quae rem harum! Cupiditate!
+									</h3>
+
+									<button class="main__faq-arrow-box faq-arrow">
+										<img src="images/right-arrow 1.svg" alt="arrow" class="main__faq-arrow">
+									</button>
+								</div>
+								<div class="main__faq-dropdown">
+									<p class="main__faq-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui sapiente
+										laborum rerum facere deleniti, officia, repellat culpa beatae quam modi, possimus illo quos nam
+										nulla. Laboriosam voluptas nulla, vero eius hic odio libero dolore odit numquam ad natus praesentium
+										nostrum eveniet ducimus rem reiciendis? Ipsum optio, nisi eos ut aperiam reprehenderit nam iusto hic
+										veniam voluptate perspiciatis odio nobis distinctio consequatur eveniet temporibus nihil quod
+										inventore incidunt ratione! Culpa, assumenda!</p>
+								</div>
+							</li>
+							<li class="main__faq-item ">
+								<div class="main__faq-item-box">
+									<h3 class="main__faq-title">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque, qui
+										magni.
+										Fugiat iusto et facilis hic quae rem harum! Cupiditate!
+									</h3>
+
+									<button class="main__faq-arrow-box faq-arrow">
+										<img src="images/right-arrow 1.svg" alt="arrow" class="main__faq-arrow">
+									</button>
+								</div>
+								<div class="main__faq-dropdown">
+									<p class="main__faq-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui sapiente
+										laborum rerum facere deleniti, officia, repellat culpa beatae quam modi, possimus illo quos nam
+										nulla. Laboriosam voluptas nulla, vero eius hic odio libero dolore odit numquam ad natus praesentium
+										nostrum eveniet ducimus rem reiciendis? Ipsum optio, nisi eos ut aperiam reprehenderit nam iusto hic
+										veniam voluptate perspiciatis odio nobis distinctio consequatur eveniet temporibus nihil quod
+										inventore incidunt ratione! Culpa, assumenda!</p>
+								</div>
+							</li>
+							<li class="main__faq-item ">
+								<div class="main__faq-item-box">
+									<h3 class="main__faq-title">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque, qui
+										magni.
+										Fugiat iusto et facilis hic quae rem harum! Cupiditate!
+									</h3>
+
+									<button class="main__faq-arrow-box faq-arrow">
+										<img src="images/right-arrow 1.svg" alt="arrow" class="main__faq-arrow">
+									</button>
+								</div>
+								<div class="main__faq-dropdown">
+									<p class="main__faq-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui sapiente
+										laborum rerum facere deleniti, officia, repellat culpa beatae quam modi, possimus illo quos nam
+										nulla. Laboriosam voluptas nulla, vero eius hic odio libero dolore odit numquam ad natus praesentium
+										nostrum eveniet ducimus rem reiciendis? Ipsum optio, nisi eos ut aperiam reprehenderit nam iusto hic
+										veniam voluptate perspiciatis odio nobis distinctio consequatur eveniet temporibus nihil quod
+										inventore incidunt ratione! Culpa, assumenda!</p>
+								</div>
+							</li>
+							<li class="main__faq-item ">
+								<div class="main__faq-item-box">
+									<h3 class="main__faq-title">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque, qui
+										magni.
+										Fugiat iusto et facilis hic quae rem harum! Cupiditate!
+									</h3>
+
+									<button class="main__faq-arrow-box faq-arrow">
+										<img src="images/right-arrow 1.svg" alt="arrow" class="main__faq-arrow">
+									</button>
+								</div>
+								<div class="main__faq-dropdown">
+									<p class="main__faq-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui sapiente
+										laborum rerum facere deleniti, officia, repellat culpa beatae quam modi, possimus illo quos nam
+										nulla. Laboriosam voluptas nulla, vero eius hic odio libero dolore odit numquam ad natus praesentium
+										nostrum eveniet ducimus rem reiciendis? Ipsum optio, nisi eos ut aperiam reprehenderit nam iusto hic
+										veniam voluptate perspiciatis odio nobis distinctio consequatur eveniet temporibus nihil quod
+										inventore incidunt ratione! Culpa, assumenda!</p>
+								</div>
+							</li>
+							<li class="main__faq-item ">
+								<div class="main__faq-item-box">
+									<h3 class="main__faq-title">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque, qui
+										magni.
+										Fugiat iusto et facilis hic quae rem harum! Cupiditate!
+									</h3>
+
+									<button class="main__faq-arrow-box faq-arrow">
+										<img src="images/right-arrow 1.svg" alt="arrow" class="main__faq-arrow">
+									</button>
+								</div>
+								<div class="main__faq-dropdown">
+									<p class="main__faq-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui sapiente
+										laborum rerum facere deleniti, officia, repellat culpa beatae quam modi, possimus illo quos nam
+										nulla. Laboriosam voluptas nulla, vero eius hic odio libero dolore odit numquam ad natus praesentium
+										nostrum eveniet ducimus rem reiciendis? Ipsum optio, nisi eos ut aperiam reprehenderit nam iusto hic
+										veniam voluptate perspiciatis odio nobis distinctio consequatur eveniet temporibus nihil quod
+										inventore incidunt ratione! Culpa, assumenda!</p>
+								</div>
+							</li>
+						</ul>
 					</div>
 				</section>
 				<section class="main__section main__results-section">
@@ -678,6 +814,9 @@
 		<script type="module" src="js/animation.js"></script>
 		<script type="module" src="js/popup.js"></script>
 		<script type="module" src="js/swiper.js"></script>
+		<script type="module" src="js/select.js"></script>
+		<script type="module" src="js/country-select.js"></script>
+		<script type="module" src="js/faq-activation.js"></script>
 	</body>
 
 </html>

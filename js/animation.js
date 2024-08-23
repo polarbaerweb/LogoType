@@ -1,5 +1,5 @@
-class AnimationText {
-	constructor(animation_start_time = 60, animation_class) {
+class Animation {
+	constructor(animation_start_time, animation_class) {
 		this._animation_start_time = animation_start_time;
 		this._animation_class = animation_class;
 		this._timeouts = [];
@@ -14,18 +14,21 @@ class AnimationText {
 		blocks_animate.forEach((block, index) => {
 			let timeoutId = setTimeout(
 				function () {
-					this._animationHandler(block);
+					this._animationHandler(block, index);
 				}.bind(this),
 
-				index * (this._animation_start_time / 2),
+				index * this._animation_start_time,
 			);
 
 			this._timeouts.push(timeoutId);
 		});
 	}
 
-	_animationHandler(block, delay) {
+	_animationHandler(block, index) {
 		block.classList.add("animate-active");
+		block.style.cssText = `
+			transition: all .${index + 3}s 
+		`;
 
 		this._animationsCompleted++;
 
@@ -44,6 +47,12 @@ class AnimationText {
 	}
 }
 
-const animation = new AnimationText(60, "_animate-text");
+const animation_text = new Animation(60, "_animate-text");
+const animation_icon = new Animation(60, "_animate-icon");
 
-window.onload = () => animation.windowLoad();
+window.onload = () => handleWindowLoad();
+
+function handleWindowLoad() {
+	animation_text.windowLoad();
+	animation_icon.windowLoad();
+}

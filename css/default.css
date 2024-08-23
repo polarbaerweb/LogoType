@@ -52,8 +52,14 @@
 	font-weight: 600;
 	text-transform: capitalize;
 }
+
+.main__section-title--uppercase {
+	text-transform: uppercase;
+}
+
 .main__section-text {
 }
+
 .main__section-paragraph {
 	font-size: 1.5rem;
 	color: #616161;
@@ -138,4 +144,24 @@
 .popup-quit::after {
 	transform: rotate(-45deg);
 	margin-top: -0.125rem;
+}
+
+._animate-text {
+	opacity: 0;
+	transform: translate(0, 120%);
+}
+
+._animate-text.animate-active {
+	opacity: 1;
+	transform: translate(0);
+}
+
+._animate-icon {
+	opacity: 0;
+	transform: translate(-140%, 0);
+}
+
+._animate-icon.animate-active {
+	opacity: 1;
+	transform: translate(0);
 }
