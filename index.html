@@ -771,6 +771,94 @@
 						</div>
 					</div>
 				</section>
+				<section class="main__section main__request">
+					<div class="main__container">
+						<div class="main__section-header">
+							<h2 class="main__section-title">service request</h2>
+							<div class="main__section-text">
+								<p class="main__section-paragraph">
+									Write to us and choose a service. We will contact you
+								</p>
+							</div>
+						</div>
+						<form action="#" method="post" class="main__request-form">
+							<div class="main__request-box">
+								<input type="text" name="name" id="name" placeholder="your name">
+							</div>
+							<div class="main__request-box">
+								<input type="email" name="email" id="email" placeholder="your email">
+							</div>
+							<div class="main__request-box">
+								<input type="text" name="phone_number" id="phone_number" placeholder="your phone number">
+							</div>
+							<div class="main__request-box">
+								<textarea name="description" id="description" placeholder="enter text"></textarea>
+							</div>
+							<div class="main__request-box">
+								<ul class="main__request-list">
+									<li class="main__request-item">
+										<div class="main__request-item-box">
+											<input type="radio" name="service-type" id="request-radio-1" class="main__request-item-radio">
+											<label for="request-radio-1" class="main__request-radio-label">
+											</label>
+										</div>
+										<h3 class="main__request-item-title">rapair and construction works</h3>
+									</li>
+									<li class="main__request-item">
+										<div class="main__request-item-box">
+											<input type="radio" name="service-type" id="request-radio-2" class="main__request-item-radio">
+											<label for="request-radio-2" class="main__request-radio-label">
+											</label>
+										</div>
+										<h3 class="main__request-item-title">Interaction with computer technologies/waste</h3>
+									</li>
+									<li class="main__request-item">
+										<div class="main__request-item-box">
+											<input type="radio" name="service-type" id="request-radio-3" class="main__request-item-radio">
+											<label for="request-radio-3" class="main__request-radio-label">
+											</label>
+										</div>
+										<h3 class="main__request-item-title">rapair and construction works</h3>
+									</li>
+									<li class="main__request-item">
+										<div class="main__request-item-box">
+											<input type="radio" name="service-type" id="request-radio-4" class="main__request-item-radio">
+											<label for="request-radio-4" class="main__request-radio-label">
+											</label>
+										</div>
+										<h3 class="main__request-item-title">rapair and construction works</h3>
+									</li>
+									<li class="main__request-item">
+										<div class="main__request-item-box">
+											<input type="radio" name="service-type" id="request-radio-5" class="main__request-item-radio">
+											<label for="request-radio-5" class="main__request-radio-label">
+											</label>
+										</div>
+										<h3 class="main__request-item-title">rapair and construction works</h3>
+									</li>
+									<li class="main__request-item">
+										<div class="main__request-item-box">
+											<input type="radio" name="service-type" id="request-radio-6" class="main__request-item-radio">
+											<label for="request-radio-6" class="main__request-radio-label">
+											</label>
+										</div>
+										<h3 class="main__request-item-title">rapair and construction works</h3>
+									</li>
+								</ul>
+							</div>
+							<div class="main__request-box main__request-box--uploading-image file-upload">
+								<label for="image-type"><img src="images/image-upload.svg" alt="type image"><span>img</span></label>
+								<input type="file" name="image-type" id="image-type">
+							</div>
+							<button type="submit" class="button main__request-button">send request</button>
+							<div class="main__request-form-text">
+								<p class="main__request-form-paragraph">
+									By submitting an application, you agree to the <b><a href="#">processing of personal data</a></b>.
+								</p>
+							</div>
+						</form>
+					</div>
+				</section>
 			</main>
 			<footer class="footer">
 				<div class="footer__container">
@@ -817,6 +905,7 @@
 		<script type="module" src="js/select.js"></script>
 		<script type="module" src="js/country-select.js"></script>
 		<script type="module" src="js/faq-activation.js"></script>
+		<script type="module" src="js/file-select.js"></script>
 	</body>
 
 </html>
