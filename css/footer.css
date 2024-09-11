@@ -58,7 +58,7 @@
 .footer-nav-link {
 	color: #ebebeb;
 	line-height: 150%;
-	font-size: 1.125rem;
+	font-size: 1.375rem;
 	text-transform: capitalize;
 	position: relative;
 }
@@ -80,12 +80,18 @@
 	}
 }
 
-.footer-title {
+.footer-title,
+.footer-title a {
 	color: #ffffff;
 	font-size: 1.5rem;
 	line-height: 150%;
 	text-transform: uppercase;
 	font-weight: 400;
+}
+
+.footer-title:nth-child(2) a {
+	text-transform: capitalize;
+	text-decoration: underline;
 }
 
 @media (max-width: 425px) {
@@ -94,7 +100,24 @@
 		height: 3rem;
 	}
 
+	.footer-nav-link {
+		font-size: 0.875rem;
+	}
+
 	.footer-link i {
 		font-size: 1.5rem;
 	}
+
+	.footer-title,
+	.footer-title a {
+		font-size: 0.875rem;
+	}
+}
+
+.footer__box {
+	max-width: 39rem;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	margin: 1.25rem auto 0 auto;
 }

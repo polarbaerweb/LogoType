@@ -1,34 +1,34 @@
-const swiper_service = new Swiper(".swiper", {
-	direction: "horizontal",
-	loop: true,
+// const swiper_service = new Swiper(".swiper", {
+// 	direction: "horizontal",
+// 	loop: true,
 
-	pagination: {
-		el: ".swiper-pagination",
-		clickable: true,
-	},
+// 	pagination: {
+// 		el: ".swiper-pagination",
+// 		clickable: true,
+// 	},
 
-	breakpoints: {
-		320: {
-			slidesPerView: 1,
-			spaceBetween: 0,
-		},
+// 	breakpoints: {
+// 		320: {
+// 			slidesPerView: 1,
+// 			spaceBetween: 0,
+// 		},
 
-		592: {
-			slidesPerView: 2,
-			spaceBetween: 32,
-		},
+// 		592: {
+// 			slidesPerView: 2,
+// 			spaceBetween: 32,
+// 		},
 
-		1024: {
-			slidesPerView: 3,
-			spaceBetween: 32,
-		},
-	},
+// 		1024: {
+// 			slidesPerView: 3,
+// 			spaceBetween: 32,
+// 		},
+// 	},
 
-	navigation: {
-		nextEl: ".swiper-button-next",
-		prevEl: ".swiper-button-prev",
-	},
-});
+// 	navigation: {
+// 		nextEl: ".swiper-button-next",
+// 		prevEl: ".swiper-button-prev",
+// 	},
+// });
 
 const swiper_about = new Swiper(".main__about-swiper", {
 	direction: "horizontal",
@@ -64,58 +64,29 @@ const swiper_about = new Swiper(".main__about-swiper", {
 	},
 });
 
-const swiper_projects = new Swiper(".main__projects-swiper", {
-	direction: "horizontal",
-	loop: true,
+// const swiper_news = new Swiper(".main__news-swiper", {
+// 	direction: "horizontal",
+// 	loop: true,
 
-	breakpoints: {
-		320: {
-			slidesPerView: 1,
-			spaceBetween: 0,
-		},
+// 	breakpoints: {
+// 		320: {
+// 			slidesPerView: 1,
+// 			spaceBetween: 0,
+// 		},
 
-		592: {
-			slidesPerView: 2,
-			spaceBetween: 10,
-		},
+// 		592: {
+// 			slidesPerView: 2,
+// 			spaceBetween: 10,
+// 		},
 
-		1024: {
-			slidesPerView: 3,
-			spaceBetween: 32,
-		},
-	},
+// 		1024: {
+// 			slidesPerView: 2,
+// 			spaceBetween: 32,
+// 		},
+// 	},
 
-	navigation: {
-		nextEl: ".swiper-button-next",
-		prevEl: ".swiper-button-prev",
-	},
-});
-
-// main__news-swiper
-
-const swiper_news = new Swiper(".main__news-swiper", {
-	direction: "horizontal",
-	loop: true,
-
-	breakpoints: {
-		320: {
-			slidesPerView: 1,
-			spaceBetween: 0,
-		},
-
-		592: {
-			slidesPerView: 2,
-			spaceBetween: 10,
-		},
-
-		1024: {
-			slidesPerView: 2,
-			spaceBetween: 32,
-		},
-	},
-
-	navigation: {
-		nextEl: ".swiper-button-next",
-		prevEl: ".swiper-button-prev",
-	},
-});
+// 	navigation: {
+// 		nextEl: ".swiper-button-next",
+// 		prevEl: ".swiper-button-prev",
+// 	},
+// });
