@@ -43,6 +43,7 @@ html {
 	font-family: "Glory", sans-serif;
 	background-color: #fafafa;
 	font-size: 1.125rem;
+	overflow-x: hidden;
 }
 
 body {
