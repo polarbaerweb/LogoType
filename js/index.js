@@ -13,7 +13,7 @@ function changeHeaderStyle() {
 	const header = document.querySelector(".header");
 
 	if (window.scrollY >= image.clientHeight - header.clientHeight) {
-		header.style.cssText = `background-color: #000; 
+		header.style.cssText = `background-color: #181818; 
 														border: none;`;
 	} else {
 		header.style.cssText = `background-color: transparent`;
