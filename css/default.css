@@ -184,3 +184,8 @@
 	opacity: 1;
 	transform: translate(0);
 }
+
+.choices__list--dropdown,
+.choices__list {
+	z-index: 99;
+}

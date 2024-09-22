@@ -38,6 +38,7 @@
 
 .main__block-paragraph {
 	font-size: 1.5rem;
+	font-weight: 300;
 	color: #f5f5f5;
 	line-height: 150%;
 }
@@ -170,6 +171,12 @@
 	border: 0.0625rem solid #43a047;
 	border-radius: 0.5625rem;
 	padding: 1.875rem 3.125rem;
+	position: relative;
+	z-index: 99;
+}
+
+.main__services-selects .choices__list--dropdown {
+	border: 0.0625rem solid #43a047 !important;
 }
 
 .main__service-select-first-block,
@@ -196,7 +203,7 @@
 	width: 50%;
 }
 
-@media (max-width: 708px) {
+@media (max-width: 1055px) {
 	.main__services-selects {
 		display: block;
 		padding: 0.625rem;
@@ -228,6 +235,7 @@
 	justify-content: flex-start;
 	flex-direction: column;
 	gap: 1.25rem;
+	position: relative;
 }
 
 .main__services-img-wrapper {
@@ -239,6 +247,7 @@
 
 .main__services-img-wrapper img {
 	position: absolute;
+	z-index: 1;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -257,6 +266,17 @@
 .main__services-title {
 	font-size: 1.5rem;
 	font-weight: 500;
+	line-height: 150%;
+	color: #000000;
+}
+
+.main__service-text {
+}
+
+.main__service-paragraph {
+	color: #6b6b6b;
+	font-weight: 600;
+	font-size: 1rem;
 	line-height: 150%;
 }
 
@@ -649,7 +669,12 @@
 .main__about-paragraph {
 	font-size: 1.125rem;
 	line-height: 150%;
-	color: #363535;
+	color: #4f4f4f;
+}
+
+.main__about-paragraph b {
+	font-weight: 700;
+	color: #333333;
 }
 
 .main__about-link {
@@ -817,25 +842,37 @@
 
 .main__faq-arrow-box {
 	width: 3.125rem;
-	height: 1.875rem;
+	height: 3.125rem;
 	border-radius: 50%;
 	background-color: #3d8940;
+	display: block;
+}
+
+.main__faq-arrow-box div {
+	width: 3.125rem;
+	height: 3.125rem;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	cursor: pointer;
 }
 
-.main__faq-arrow {
-}
-
 @media (max-width: 768px) {
 	.main__faq-title {
-		width: 16.875rem;
+		width: 270px;
 		font-size: 1.125rem;
 		white-space: nowrap;
 		overflow: hidden;
 		text-overflow: ellipsis;
+	}
+
+	.main__faq-arrow-box {
+		width: 3.125rem;
+		height: 3.125rem;
+	}
+
+	.main__faq-arrow {
+		width: 0.9375rem;
 	}
 
 	.main__faq-paragraph {
@@ -1192,7 +1229,7 @@
 	line-height: 150%;
 }
 
-.main__contacts-text {
+.main__contacts-text > * {
 	margin-top: 0.9375rem;
 	color: #f5f5f5;
 }

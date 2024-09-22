@@ -1,13 +1,41 @@
 @font-face {
 	font-family: "Avenir";
-	src:
-		url("avenir-font/AvenirLTStd-Black.otf") format("opentype"),
-		url("avenir-font/AvenirLTStd-Book.otf") format("opentype"),
-		url("avenir-font/AvenirLTStd-Heavy.otf") format("opentype"),
-		url("avenir-font/AvenirLTStd-Light.otf") format("opentype"),
-		url("avenir-font/AvenirLTStd-Medium.otf") format("opentype"),
-		url("avenir-font/AvenirLTStd-Roman.otf") format("opentype"),
-		url("avenir-font/AvenirLTStd-Black.otf") format("opentype");
-	font-weight: 400;
+	src: url("avenir-font/AvenirLTStd-Black.otf") format("opentype");
+	font-weight: 900; /* Black */
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Avenir";
+	src: url("avenir-font/AvenirLTStd-Heavy.otf") format("opentype");
+	font-weight: 800; /* Heavy */
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Avenir";
+	src: url("avenir-font/AvenirLTStd-Medium.otf") format("opentype");
+	font-weight: 600; /* Medium */
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Avenir";
+	src: url("avenir-font/AvenirLTStd-Light.otf") format("opentype");
+	font-weight: 300; /* Light */
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Avenir";
+	src: url("avenir-font/AvenirLTStd-Book.otf") format("opentype");
+	font-weight: 400; /* Book/Regular */
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Avenir";
+	src: url("avenir-font/AvenirLTStd-Roman.otf") format("opentype");
+	font-weight: 400; /* Roman/Regular */
 	font-style: normal;
 }
