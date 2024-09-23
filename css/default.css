@@ -34,10 +34,10 @@
 	position: relative;
 }
 
-/* .main__container > * {
+.main__call .main__container > * {
 	position: relative;
 	z-index: 99;
-} */
+}
 
 .main__section-header {
 	text-align: center;
