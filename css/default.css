@@ -38,7 +38,8 @@
 	position: relative;
 }
 
-#contacts .main__container > * {
+#contacts .main__container > *,
+#main-block-2 .main__container > * {
 	z-index: 99;
 }
 

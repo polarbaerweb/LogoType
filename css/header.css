@@ -14,7 +14,7 @@
 	width: 100%;
 	border-bottom: 0.0625rem solid var(--default-color);
 	transition: background-color 0.3s;
-	z-index: 100;
+	z-index: 101;
 }
 
 .header__big_container {
