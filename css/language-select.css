@@ -1606,6 +1606,7 @@ u {
 }
 
 .btn {
+	width: 100%;
 	display: -ms-inline-flexbox;
 	display: inline-flex;
 	position: relative;
@@ -2222,6 +2223,7 @@ u {
 .language-picker {
 	display: inline-block;
 	position: relative;
+	width: 100%;
 }
 
 .js .language-picker__form {
@@ -2353,6 +2355,10 @@ u {
 	display: flex;
 	-ms-flex-align: center;
 	align-items: center;
+}
+
+.language-picker__flag em {
+	font-style: normal;
 }
 
 .language-picker__flag::before {
