@@ -41,7 +41,7 @@
 							</li>
 						</ul>
 					</nav>
-					<div class="burger">
+					<div class="burger burger-header" data-burger_for="header">
 						<span class="burger__middle"></span>
 					</div>
 				</div>
@@ -116,20 +116,21 @@
 				<section class="main__section main__services" id="suggestions">
 					<div class="main__container">
 						<div class="main__section-header">
-							<h2 class="main__section-title">suggestions</h2>
+							<div class="main__section-header-top">
+								<h2 class="main__section-title">suggestions</h2>
+								<div class="burger burger-suggestion" data-burger_for="suggestion">
+									<span class="burger__middle"></span>
+								</div>
+							</div>
 
-							<form class="main__services-selects" method="post">
-								<div class="main__service-select-first-block">
-									<select class="select select-one" data-select_type="country">
-									</select>
-									<select class="select select-one" data-select_type="city">
-									</select>
-								</div>
-								<div class="main__service-select-second-block">
-									<select class="select select-one" data-select_type="category">
-									</select>
-									<button type="submit" class="button">view <span>suggestions</span></button>
-								</div>
+							<form class="main__services-selects filter" method="post">
+								<select class="select select-one" data-select_type="country">
+								</select>
+								<select class="select select-one" data-select_type="city">
+								</select>
+								<select class="select select-one" data-select_type="category">
+								</select>
+								<button type="submit" class="button">view <span>suggestions</span></button>
 							</form>
 						</div>
 						<ul class="main__services-list">
