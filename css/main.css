@@ -357,6 +357,10 @@
 	.main__services-item:not(:last-child) {
 		margin-bottom: 2rem;
 	}
+
+	.filter {
+		width: 100%;
+	}
 }
 
 /* Main Advantages */
