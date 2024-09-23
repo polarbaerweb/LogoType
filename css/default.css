@@ -34,8 +34,11 @@
 	position: relative;
 }
 
-.main__call .main__container > * {
+.main__container > * {
 	position: relative;
+}
+
+#contacts .main__container > * {
 	z-index: 99;
 }
 
