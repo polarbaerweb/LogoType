@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		init() {
 			this.input.onchange = () => {
 				this.handleFileInputChange();
-				this.displayUploadedImage();
+				// this.displayUploadedImage();
 			};
 		}
 
