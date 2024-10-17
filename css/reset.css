@@ -95,6 +95,8 @@ html.active {
 	object-fit: cover;
 	object-position: center;
 	display: block;
+	z-index: 1;
+	filter: brightness(0.5);
 }
 
 .main__block-image {

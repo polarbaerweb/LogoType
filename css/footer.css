@@ -1,6 +1,6 @@
 .footer {
 	min-height: 18.875rem;
-	background-color: #181818;
+	background-color: #000;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -43,13 +43,14 @@
 }
 
 .footer-nav-list {
-	max-width: 39rem;
+	max-width: max-content;
 	width: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	flex-wrap: wrap;
 	text-align: center;
+	gap: 0.75rem;
 }
 
 .footer-nav-item {

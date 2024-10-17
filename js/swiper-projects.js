@@ -22,6 +22,14 @@ const swiperProjects = new Swiper(".main__projects-swiper", {
 	},
 });
 
+const swiperRapparing = new Swiper(".main__raparring-swiper", {
+	direction: "horizontal",
+	loop: true,
+	autoplay: {
+		delay: 2500,
+	},
+});
+
 Array.from(document.querySelectorAll(".main__image-swiper")).forEach(
 	(swiperContainer) => {
 		function getRandomInt(min, max) {

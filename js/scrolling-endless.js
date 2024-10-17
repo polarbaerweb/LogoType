@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 	function animateScroll() {
 		function step() {
-			startPosition -= 1.5;
+			startPosition -= 1;
 			if (startPosition < -contentWidth / 2) {
 				startPosition = 0;
 			}

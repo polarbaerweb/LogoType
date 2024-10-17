@@ -1,5 +1,4 @@
-.main__block-raparring-container {
-	padding: 11.25rem 0.625rem 11.25rem 0.625rem;
+.main__raparring-container {
 	display: flex;
 	align-items: flex-start;
 	flex-direction: column;
@@ -7,6 +6,12 @@
 	margin: 0 auto;
 	width: 100%;
 	text-align: left;
+	position: relative;
+	z-index: 100;
+}
+
+.main__rapparing-swiper-slide {
+	padding: 10.625rem 0.625rem 10.625rem 0.625rem;
 }
 
 .main__repair-body:not(:last-child) {
@@ -51,18 +56,20 @@
 	align-items: center;
 	justify-content: center;
 	text-transform: uppercase;
+	position: relative;
+	z-index: 100;
 }
 
 @media (max-width: 992px) {
-	.main__block-raparring-container {
-		padding: 6.25rem 0.625rem 6.25rem 0.625rem;
+	.main__raparring-container {
 	}
+
 	.main__repair-title {
 		font-size: 2.75rem;
 	}
 
 	.main__repair-paragraph {
-		font-size: 1.125rem;
+		font-size: 1rem;
 	}
 
 	.main__repair-button {
@@ -79,7 +86,7 @@
 
 @media (max-width: 425px) {
 	.main__repair-title {
-		font-size: 2.125rem;
+		font-size: 1.5rem;
 	}
 
 	.main__repair-button {

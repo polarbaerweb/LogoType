@@ -17,21 +17,22 @@
 
 	<body>
 		<div class="wrapper">
-			<header class="header">
+			<header class="header scrolling-link-box">
 				<div class="header__big_container">
 					<div class="header__left">
-						<a href="#" class="header__link link-disabled">
-							<img src="images/LOGOTYPE.svg" alt="logo image">
+						<a href="index.html" class="header__link link-disabled">
+							<img src="images/icons/Delta Green Line EU_new_green.svg" alt="logo image">
 						</a>
 					</div>
 					<nav class="header__navigation header__right">
-						<ul class="header__list">
-							<li class="header__list-item"><a href="main-block" class="header__link">main page</a></li>
-							<li class="header__list-item"><a href="suggestions" class="header__link">suggestion</a></li>
-							<li class="header__list-item"><a href="about-us" class="header__link">about us</a></li>
-							<li class="header__list-item"><a href="faq" class="header__link">FAQ</a></li>
-							<li class="header__list-item"><a href="reviwes" class="header__link">reviews</a></li>
-							<li class="header__list-item"><a href="contacts" class="header__link">contacts</a></li>
+						<ul class="header__list ">
+							<li class="header__list-item"><a href="main-block" class="header__link scrolling-link">main page</a></li>
+							<li class="header__list-item"><a href="suggestions" class="header__link scrolling-link">suggestion</a>
+							</li>
+							<li class="header__list-item"><a href="about-us" class="header__link scrolling-link">about us</a></li>
+							<li class="header__list-item"><a href="faq" class="header__link scrolling-link">FAQ</a></li>
+							<li class="header__list-item"><a href="reviwes" class="header__link scrolling-link">reviews</a></li>
+							<li class="header__list-item"><a href="contacts" class="header__link scrolling-link">contacts</a></li>
 							<li class="header__list-item header__list-item--long">
 								<div class="js">
 									<div class="language-picker js-language-picker" data-trigger-class="btn btn--subtle">
@@ -492,6 +493,7 @@
 						</ul>
 					</div>
 				</section>
+				</section>
 				<!-- <section class="main__section main__advantages">
 					<div class="main__container">
 						<div class="main__section-header">
@@ -614,7 +616,7 @@
 								<div class="main__reviews-kind">customer</div>
 							</li>
 						</ul>
-						<form action="#" class="main__reviews-form" method="post">
+						<!-- <form action="#" class="main__reviews-form" method="post">
 							<div class="main__reviews-form-box">
 								<label for="name" class="main__reviews-form-label">your name</label>
 								<input type="text" name="name" id="name">
@@ -624,7 +626,7 @@
 								<textarea name="review" id="review"></textarea>
 							</div>
 							<button type="submit" class="button main__reviews-button">send review</button>
-						</form>
+						</form> -->
 					</div>
 				</section>
 				<!-- <section class="main__section main__last-projects">
@@ -925,7 +927,10 @@
 					</div>
 				</section> -->
 				<section class="main__map" id="map-card">
-					<div id="map" style="height: 39.6875rem;"></div>
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2177.4512362408655!2d24.16481057678329!3d56.923933901184746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eed1fba071b013%3A0xb6e78c15d4575688!2sLatgales%20iela%20222B%2C%20Latgales%20priek%C5%A1pils%C4%93ta%2C%20R%C4%ABga%2C%20LV-1019%2C%20Latvia!5e0!3m2!1sen!2s!4v1728443296851!5m2!1sen!2s"
+						width="100%" height="635" style="border:none;" allowfullscreen="" loading="lazy"
+						referrerpolicy="no-referrer-when-downgrade"></iframe>
 					<div class="main__map-contacts">
 						<div class="main__map-container">
 							<div class="main__map-contact-header">
@@ -949,7 +954,7 @@
 						</div>
 					</div>
 				</section>
-				<section class="main__section main__request" id="request">
+				<!-- <section class="main__section main__request" id="request">
 					<div class="main__container">
 						<div class="main__section-header">
 							<h2 class="main__section-title">service request</h2>
@@ -1047,9 +1052,9 @@
 							</div>
 						</form>
 					</div>
-				</section>
+				</section> -->
 			</main>
-			<footer class="footer">
+			<footer class="footer scrolling-link-box">
 				<div class="footer__container">
 					<ul class="footer-list">
 						<li class="footer-list-item"><a href="#" class="footer-link"><i class="fa-brands fa-facebook"></i></a>
@@ -1062,11 +1067,12 @@
 						</li>
 					</ul>
 					<ul class="footer-nav-list">
-						<li class="footer-nav-item"><a href="#" class="footer-nav-link">about us</a></li>
-						<li class="footer-nav-item"><a href="#" class="footer-nav-link">services</a></li>
-						<li class="footer-nav-item"><a href="#" class="footer-nav-link">projects</a></li>
-						<li class="footer-nav-item"><a href="#" class="footer-nav-link">news</a></li>
-						<li class="footer-nav-item"><a href="#" class="footer-nav-link">contacts</a></li>
+						<li class="footer-nav-item"><a href="main-block" class="footer-nav-link scrolling-link">main page</a></li>
+						<li class="footer-nav-item"><a href="suggestions" class="footer-nav-link scrolling-link">suggestion</a></li>
+						<li class="footer-nav-item"><a href="about-us" class="footer-nav-link scrolling-link">about us</a></li>
+						<li class="footer-nav-item"><a href="faq" class="footer-nav-link scrolling-link">faq</a></li>
+						<li class="footer-nav-item"><a href="reviews" class="footer-nav-link scrolling-link">reviwes</a></li>
+						<li class="footer-nav-item"><a href="contacts" class="footer-nav-link scrolling-link">contacts</a></li>
 					</ul>
 					<div class="footer__box">
 						<h2 class="footer-title">&copy;2024 delta green line</h2>
@@ -1097,7 +1103,7 @@
 		<script type="module" src="js/select.js"></script>
 		<script type="module" src="js/country-select.js"></script>
 		<script type="module" src="js/faq-activation.js"></script>
-		<script type="module" src="js/file-select.js"></script>
+		<!-- <script type="module" src="js/file-select.js"></script> -->
 		<script type="module" src="js/scrolling.js"></script>
 		<script type="module" src="js/scrolling-endless.js"></script>
 		<script type="module" src="js/map.js"></script>
