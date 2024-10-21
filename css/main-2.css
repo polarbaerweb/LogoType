@@ -3,6 +3,7 @@
 	align-items: flex-start;
 	flex-direction: column;
 	max-width: 57.625rem;
+	min-height: 21.875rem;
 	margin: 0 auto;
 	width: 100%;
 	text-align: left;
@@ -72,8 +73,16 @@
 	.main__raparring-container {
 	}
 
+	.main__rapparing-swiper-slide {
+		padding: 9.375rem 0.625rem 9.375rem 0.625rem;
+	}
+
 	.main__repair-title {
 		font-size: 2.75rem;
+	}
+
+	.main__repair-title--centered {
+		text-align: left;
 	}
 
 	.main__repair-paragraph {
@@ -107,12 +116,6 @@
 .main__premises {
 }
 
-.main__repair-section-header {
-	/* position: relative;
-	top: 0;
-	left: 0; */
-}
-
 .main__repair-section-header::after {
 	position: absolute;
 	top: calc(100% + 1.25rem);
@@ -144,20 +147,6 @@
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
-	position: relative;
-}
-
-.main__repair-premises-item::after {
-	content: "";
-	position: absolute;
-	top: calc(100% - 1.5625rem);
-	left: 50%;
-	transform: translate(-50%, 0);
-	max-width: 4.875rem;
-	width: 100%;
-	height: 0.3125rem;
-	background-color: #43a047;
-	z-index: 100;
 }
 
 .main__repair-premises-image-wrapper {
@@ -188,6 +177,21 @@
 	padding: 1.5625rem 1.5625rem 2.1875rem 1.5625rem;
 	border: 0.0625rem solid #c7c7c7;
 	min-height: 20.3125rem;
+	height: calc(100% - 15.5rem);
+	position: relative;
+}
+
+.main__repair-premises-item-body::after {
+	content: "";
+	position: absolute;
+	top: calc(100% - 0.9375rem);
+	left: 50%;
+	transform: translate(-50%, 0);
+	max-width: 4.875rem;
+	width: 100%;
+	height: 0.3125rem;
+	background-color: #43a047;
+	z-index: 100;
 }
 
 .main__repair-premises-title {
@@ -226,6 +230,7 @@
 
 	.main__repair-premises-item-body {
 		min-height: 14.0625rem;
+		height: max-content;
 	}
 
 	.main__repair-premises-title {
@@ -233,7 +238,7 @@
 	}
 
 	.main__repair-premises-paragraph {
-		font-size: 0.875rem;
+		font-size: 1.2rem;
 	}
 }
 
@@ -271,7 +276,7 @@
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
-	gap: 0.625rem;
+	gap: 1.625rem;
 }
 
 .main__facilities-sub-item {
@@ -374,10 +379,11 @@
 
 	.main__special-works-inner-title {
 		font-size: 1.25rem;
-		width: 7.5rem;
+		/* width: 7.5rem;
 		overflow: hidden;
 		text-overflow: ellipsis;
-		white-space: nowrap;
+		white-space: nowrap; */
+		text-align: center;
 	}
 }
 

@@ -91,7 +91,7 @@ class Burger {
 			element.classList.contains("active"),
 		);
 
-		if (anyActive) {
+		if (anyActive && this.burger_for === "header") {
 			document.documentElement.classList.add("active");
 		} else {
 			const hasOtherActive = Object.keys(this.elements).some((key) =>
