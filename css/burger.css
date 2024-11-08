@@ -25,6 +25,7 @@
 	width: 1.5rem;
 	height: 0.125rem;
 	background-color: var(--burger-color);
+	transition: all 0.4s ease;
 }
 
 .burger__middle {
@@ -39,10 +40,11 @@
 }
 
 .burger.active::before {
-	rotate: 320deg;
+	rotate: -45deg;
 	position: relative;
 	top: 0.3rem;
 }
+
 .burger.active::after {
 	rotate: 45deg;
 	position: relative;

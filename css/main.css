@@ -893,11 +893,7 @@
 
 @media (max-width: 768px) {
 	.main__faq-title {
-		width: 270px;
 		font-size: 1.125rem;
-		white-space: nowrap;
-		overflow: hidden;
-		text-overflow: ellipsis;
 	}
 
 	.main__faq-arrow-box {
@@ -910,7 +906,7 @@
 	}
 
 	.main__faq-paragraph {
-		font-size: 0.875rem;
+		font-size: 0.9rem;
 	}
 }
 
